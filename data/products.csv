@@ -1,2 +1,3 @@
 barcode,name,brand,category,size,price,quantity,location,supplier,description,image_url
 INV-000001,عربة مرسيدس,مرسيدس,مركبة,حمولة 15 طن,"1000000",50,فوج 304,,"اللون كاكي، سنة الصنع 2014",https://raw.githubusercontent.com/Mahmoud138129/barcode-product-finder/main/images.jfif
+INV-000002,مركبة أورال,روسي,مركبة,10 طن,200000,60,هنجر,,"6x6",https://raw.githubusercontent.com/Mahmoud138129/barcode-product-finder/refs/heads/main/images%20(1).jfif
