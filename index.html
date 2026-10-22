@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
@@ -39,6 +40,7 @@
           </div>
           <span class="step-icon">⌗</span>
         </div>
+
         <div class="camera-box" id="cameraBox">
           <video id="video" muted playsinline></video>
           <div class="camera-placeholder" id="cameraPlaceholder">
@@ -48,19 +50,31 @@
           </div>
           <div class="scan-frame" aria-hidden="true"><i></i></div>
         </div>
+
         <div class="camera-actions">
           <button class="button button-primary" id="startScan">ابدأ المسح بالكاميرا</button>
           <button class="button button-light" id="stopScan" disabled>إيقاف</button>
         </div>
+
         <p class="hint">تحتاج الكاميرا إلى رابط HTTPS، مثل رابط GitHub Pages، أو localhost أثناء التطوير.</p>
+
         <div class="separator"><span>أو اكتب رقم الباركود</span></div>
+
         <form id="searchForm" class="search-form">
           <label for="barcodeInput">رقم الباركود</label>
           <div class="search-row">
-            <input id="barcodeInput" name="barcode" inputmode="numeric" autocomplete="off" placeholder="مثال: 6221234567890">
+            <input
+              id="barcodeInput"
+              name="barcode"
+              type="text"
+              inputmode="text"
+              autocomplete="off"
+              placeholder="مثال: INV-000001"
+            >
             <button class="button button-dark" type="submit">بحث</button>
           </div>
         </form>
+
         <p class="status" id="scanStatus" role="status" aria-live="polite">جاهز للبحث.</p>
       </div>
 
@@ -72,30 +86,42 @@
           </div>
           <span class="step-icon">◇</span>
         </div>
+
         <div id="emptyState" class="empty-state">
-          <div class="empty-illustration"><div class="box-top"></div><div class="box-body"></div><div class="box-label">?</div></div>
+          <div class="empty-illustration">
+            <div class="box-top"></div>
+            <div class="box-body"></div>
+            <div class="box-label">?</div>
+          </div>
           <h4>المنتج هيظهر هنا</h4>
           <p>امسح الباركود أو ابحث عن رقمه لعرض البيانات الموجودة في ملف المنتجات.</p>
         </div>
+
         <article id="productResult" class="product-result" hidden>
           <div class="product-top">
-            <div class="product-image" id="productImageWrap" hidden><img id="productImage" alt="صورة المنتج"></div>
+            <div class="product-image" id="productImageWrap" hidden>
+              <img id="productImage" alt="صورة المنتج">
+            </div>
             <div class="product-title-wrap">
               <span class="result-chip">تم العثور على المنتج</span>
               <h4 id="productName"></h4>
               <p id="productBrand" class="product-brand"></p>
             </div>
           </div>
+
           <div class="barcode-display">
             <span>الباركود</span>
             <strong id="productBarcode"></strong>
           </div>
+
           <div class="details-grid" id="productDetails"></div>
+
           <div id="productDescriptionWrap" class="description-wrap" hidden>
             <h5>تفاصيل إضافية</h5>
             <p id="productDescription"></p>
           </div>
         </article>
+
         <div id="notFound" class="not-found" hidden>
           <div class="not-found-icon">?</div>
           <h4>المنتج مش موجود في ملف البيانات</h4>
@@ -107,17 +133,29 @@
     <section class="bottom-grid">
       <div class="info-card">
         <span class="info-number">01</span>
-        <div><h4>أضف منتجاتك في Excel</h4><p>استخدم قالب Excel المرفق، وخلي عمود الباركود نصًا للحفاظ على الأصفار في بداية الرقم.</p></div>
+        <div>
+          <h4>أضف منتجاتك في Excel</h4>
+          <p>استخدم قالب Excel المرفق، وخلي عمود الباركود نصًا للحفاظ على الأصفار في بداية الرقم.</p>
+        </div>
       </div>
+
       <div class="info-card">
         <span class="info-number">02</span>
-        <div><h4>صدّر البيانات إلى CSV</h4><p>احفظ الورقة بصيغة CSV UTF-8، ثم استبدل الملف <code>data/products.csv</code>.</p></div>
+        <div>
+          <h4>صدّر البيانات إلى CSV</h4>
+          <p>احفظ الورقة بصيغة CSV UTF-8، ثم استبدل الملف <code>data/products.csv</code>.</p>
+        </div>
       </div>
+
       <div class="info-card">
         <span class="info-number">03</span>
-        <div><h4>انشر التحديث على GitHub</h4><p>ارفع الملف الجديد إلى نفس المستودع. سيظهر التحديث بعد اكتمال النشر وتحديث الصفحة.</p></div>
+        <div>
+          <h4>انشر التحديث على GitHub</h4>
+          <p>ارفع الملف الجديد إلى نفس المستودع. سيظهر التحديث بعد اكتمال النشر وتحديث الصفحة.</p>
+        </div>
       </div>
     </section>
+
     <footer>
       <span>دليل المنتجات</span>
       <span id="databaseCount">جاري تحميل قاعدة البيانات…</span>
