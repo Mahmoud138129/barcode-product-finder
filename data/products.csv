@@ -1,1 +1,3 @@
+barcode,name,brand,category,size,price,quantity,location,supplier,description,image_url
+INV-000001,عربة مرسيدس,مرسيدس,مركبة,حمولة 15 طن,1000000,50,فوج 304,,"عربة مرسيدس، اللون كاكي، سنة الصنع 2014، رقم الشاسيه غير متوفر حاليًا. الباركود داخلي ويمثل الصنف بالكامل؛ الكمية المسجلة 50.",https://raw.githubusercontent.com/Mahmoud138129/barcode-product-finder/main/images.jfif
 
